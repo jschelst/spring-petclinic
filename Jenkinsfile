@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Compile') {
             steps {
                 git 'https://github.com/jschelst/spring-petclinic.git'
 

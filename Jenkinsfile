@@ -12,8 +12,8 @@ pipeline {
         stage('Scan') {
             steps {
                 withSonarQubeEnv(installationName: 'newsonarserver') {
-                    //sh './mvnw clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.0.2155:sonar'
-                    sh './mvnw clean sonar:sonar'
+                    sh './mvnw clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.1.2184:sonar'
+                    //sh './mvnw clean sonar:sonar'
                 }
             }
         }
